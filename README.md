@@ -1,10 +1,10 @@
-# VDCG: Voronoi-Decomposition Conditional Gradient Method
+# VCG
 
-This repository contains the official Julia implementation for the paper: **"Voronoi-Decomposition Conditional Gradient Method for Non-Convex Optimization"**.
+This repository contains the official Julia implementation for the paper: **"Voronoi Conditional Gradient Method for Non-Convex Optimization"**.
 
 ## Abstract
 
-While the Conditional Gradient (CG) method is a cornerstone for constrained optimization, its application to non-convex problems is often hindered by convergence to poor local minima. To address this, we introduce the Voronoi-Decomposition Conditional Gradient (VDCG), a novel framework that systematically explores the solution space through a geometric strategy. VDCG iteratively constructs a Voronoi partition of the feasible set, using previously identified stationary points as centers. By launching new CG instances from within these Voronoi cells, the method effectively escapes the basins of attraction of known solutions and diversifies the search.
+While the Conditional Gradient (CG) method is a cornerstone for constrained optimization, its application to non-convex problems is often hindered by convergence to poor local minima. To address this, we introduce the Voronoi Conditional Gradient (VCG), a novel framework that systematically explores the solution space through a geometric strategy. VDCG iteratively constructs a Voronoi partition of the feasible set, using previously identified stationary points as centers. By launching new CG instances from within these Voronoi cells, the method effectively escapes the basins of attraction of known solutions and diversifies the search.
 
 ## Method Overview
 
@@ -62,11 +62,11 @@ As of September 2025, the code has been tested with recent versions of Julia and
 If you find this work useful in your research, please consider citing our paper.
 
 ```bibtex
-@article{khademi2025vdcg,
+@article{khademi2026vdcg,
   author    = {Khademi, Abbas},
-  title     = {Voronoi-Decomposition Conditional Gradient Method for Non-Convex Optimization},
+  title     = {Voronoi Conditional Gradient Method for Nonconvex Optimization},
   journal   = {Preparation for Submission},
-  year      = {2025}
+  year      = {2026}
 }
 ```
 
@@ -74,4 +74,4 @@ If you find this work useful in your research, please consider citing our paper.
 
 The adaptive stepsize strategy used in our implementation is based on the work:
 
-> A. Khademi, A. Silveti-Falls, "Adaptive stepsizes for algorithms using linear minimization oracles," in Preparation for Submission (2025).
+> A. Khademi, A. Silveti-Falls, "Adaptive conditional gradient descent" (2025).
