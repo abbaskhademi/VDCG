@@ -1,6 +1,6 @@
 # VCG
 
-This repository contains the official Julia implementation for the paper: **"Voronoi Conditional Gradient Method for Non-Convex Optimization"**.
+This repository contains the official Julia implementation for the paper: **"Voronoi Conditional Gradient Method for Constrained Nonconvex Optimization"**.
 
 ## Abstract
 
@@ -64,7 +64,7 @@ If you find this work useful in your research, please consider citing our paper.
 ```bibtex
 @article{khademi2026vdcg,
   author    = {Khademi, Abbas},
-  title     = {Voronoi Conditional Gradient Method for Nonconvex Optimization},
+  title     = {Voronoi Conditional Gradient Method for Constrained Nonconvex Optimization},
   journal   = {Preparation for Submission},
   year      = {2026}
 }
