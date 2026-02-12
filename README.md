@@ -4,11 +4,11 @@ This repository contains the official Julia implementation for the paper: **"Vor
 
 ## Abstract
 
-While the Conditional Gradient (CG) method is a cornerstone for constrained optimization, its application to non-convex problems is often hindered by convergence to poor local minima. To address this, we introduce the Voronoi Conditional Gradient (VCG), a novel framework that systematically explores the solution space through a geometric strategy. VDCG iteratively constructs a Voronoi partition of the feasible set, using previously identified stationary points as centers. By launching new CG instances from within these Voronoi cells, the method effectively escapes the basins of attraction of known solutions and diversifies the search.
+While the Conditional Gradient (CG) method is a cornerstone for constrained optimization, its application to non-convex problems is often hindered by convergence to poor local minima. To address this, we introduce the Voronoi Conditional Gradient (VCG), a novel framework that systematically explores the solution space through a geometric strategy. VCG iteratively constructs a Voronoi partition of the feasible set, using previously identified stationary points as centers. By launching new CG instances from within these Voronoi cells, the method effectively escapes the basins of attraction of known solutions and diversifies the search.
 
 ## Method Overview
 
-The VDCG algorithm enhances the standard Conditional Gradient (CG) method with a structured exploration phase to better navigate non-convex landscapes. The core idea is to:
+The VCG algorithm enhances the standard Conditional Gradient (CG) method with a structured exploration phase to better navigate non-convex landscapes. The core idea is to:
 
 1.  **Find a Stationary Point:** Run a standard CG algorithm to find an initial stationary point.
 2.  **Decompose the Space:** Use all unique stationary points found so far as centers for a Voronoi decomposition of the feasible set.
